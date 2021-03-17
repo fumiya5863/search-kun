@@ -1,0 +1,13 @@
+.app-nav {
+    position: static;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.app-nav-link {
+    color: #6c757d;
+    margin-right: 15px;
+} 
