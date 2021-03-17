@@ -50,12 +50,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+        "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{css,js}": [
-      "prettier --write \"./src\""
-    ]
+      "*.{css,js}": [
+          "prettier --config ./.prettierc.js --write \"./src\""
+      ]
   }
 }
