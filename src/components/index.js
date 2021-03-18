@@ -1,22 +1,22 @@
-import React, { Component } from "react";
+import React, {
+    Component,
+} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'stisla-theme/dist/css/style.css';
 
-import "@styles";
-import Header from "@components/header";
-import Main from "@components/main";
-import Footer from "@components/footer";
-
+import '@styles';
+import Header from '@components/header';
+import Main from '@components/main';
+import Footer from '@components/footer';
 
 export default class Index extends Component {
-    render()
-    {
+    render() {
         return (
             <Router>
-                <Header/>
-                <Main/>
-                <Footer/>
+                <Header />
+                <Main />
+                <Footer />
             </Router>
         );
     }
