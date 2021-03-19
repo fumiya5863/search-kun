@@ -21,6 +21,14 @@ const NavSetting = [
         text: '買い物',
         url: 'shop',
     },
+    {
+        text: '地図',
+        url: 'map',
+    },
+    {
+        text: '地域',
+        url: 'area',
+    }
 ];
 
 const NavLinkStyle = {

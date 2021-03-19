@@ -1,25 +1,26 @@
 import React, {
     Component,
 } from 'react';
+import { Card } from "react-bootstrap";
 
 export default class Sns extends Component {
     render() {
         return (
-            <div className="card card-primary">
-                <div className="card-header">
+            <Card className="card-primary">
+                <Card.Header>
                     <h4>
                         検索
                     </h4>
-                </div>
-                <div className="card-body">
+                </Card.Header>
+                <Card.Body>
                     <p>
                         Card{' '}
                         <code>
                             .card-primary
                         </code>
                     </p>
-                </div>
-            </div>
+                </Card.Body>
+            </Card>
         );
     }
 }
