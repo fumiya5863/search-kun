@@ -4,6 +4,7 @@ import React, {
 import { Route } from 'react-router-dom';
 
 import Top from '@components/main/contents/top';
+import Search from '@components/main/contents/search';
 
 export default class Contents extends Component {
     render() {
@@ -14,6 +15,13 @@ export default class Contents extends Component {
                     path="/"
                     component={
                         Top
+                    }
+                ></Route>
+                <Route
+                    exact
+                    path="/search"
+                    component={
+                        Search
                     }
                 ></Route>
             </>

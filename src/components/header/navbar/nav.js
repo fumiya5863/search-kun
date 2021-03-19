@@ -28,7 +28,7 @@ const NavSetting = [
     {
         text: '地域',
         url: 'area',
-    }
+    },
 ];
 
 const NavLinkStyle = {

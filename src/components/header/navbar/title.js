@@ -14,7 +14,11 @@ export default class Title extends Component {
         return (
             <Link to="/">
                 <Navbar.Brand>
-                    <SearchAlt style={SearchIconStyle} />
+                    <SearchAlt
+                        style={
+                            SearchIconStyle
+                        }
+                    />
                     ふみやん検索
                 </Navbar.Brand>
             </Link>

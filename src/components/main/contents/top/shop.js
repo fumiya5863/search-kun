@@ -1,7 +1,7 @@
 import React, {
     Component,
 } from 'react';
-import { Card } from "react-bootstrap";
+import { Card } from 'react-bootstrap';
 
 export default class Shop extends Component {
     render() {
