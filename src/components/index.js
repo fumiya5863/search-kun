@@ -2,9 +2,6 @@ import React, {
     Component,
 } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'stisla-theme/dist/css/style.css';
-
 import '@styles';
 import Header from '@components/header';
 import Main from '@components/main';

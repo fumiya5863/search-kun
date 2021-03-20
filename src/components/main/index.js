@@ -4,13 +4,15 @@ import React, {
 import { Container } from 'react-bootstrap';
 
 import Contents from '@components/main/contents';
-import Search from '@components/main/search';
+// import Search from '@components/main/search';
+import { SearchGroup } from '@molecules/SearchGroup';
 
 export default class Main extends Component {
     render() {
         return (
             <Container>
-                <Search />
+                {/* <Search /> */}
+                <SearchGroup />
                 <Contents />
             </Container>
         );

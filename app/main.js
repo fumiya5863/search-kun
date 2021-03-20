@@ -14,7 +14,7 @@ function createWindow() {
 
     mainWindow.loadURL('http://localhost:8080');
 
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function () {
         mainWindow = null
