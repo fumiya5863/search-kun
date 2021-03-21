@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'stisla-theme/dist/css/style.css';
 
 import '@styles';
-import Header from '@components/header';
+import Header from '@organisms/Header';
 import Main from '@components/main';
-import Footer from '@components/footer';
+import Footer from '@organisms/Footer';
 
 export default class Index extends Component {
     render() {

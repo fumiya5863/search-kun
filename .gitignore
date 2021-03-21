@@ -16,5 +16,6 @@ bower_components
 psd
 thumb
 sketch
+temp/*
 
 # End of https://www.toptal.com/developers/gitignore/api/react
