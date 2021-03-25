@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Form } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -10,13 +10,23 @@ const StyledForm = styled(Form)`
 `;
 
 const SearchForm = () => {
+    const [searchText, setSearchText] = useState('');
+
+    const onChange = useCallback(
+        (e) => {
+            setSearchText(e.target.value);
+        },
+        [searchText]
+    );
+    
     return (
-        <StyledForm
-            style={
-                FormStyle
-            }
-        >
-            <Input type="search" placeholder="google検索"/>
+        <StyledForm>
+            <Input 
+                type="search" 
+                value={searchText} 
+                placeholder="google検索"
+                onChange={onChange}
+            />
         </StyledForm>
     );
 };

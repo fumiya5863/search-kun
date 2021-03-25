@@ -1,26 +1,14 @@
 import React, {
     Component,
 } from 'react';
-import { Card } from 'react-bootstrap';
+
+import { Card } from '@molecules/Card';
 
 export default class News extends Component {
     render() {
+        const element = <p>hello</p>
         return (
-            <Card className="card-primary">
-                <Card.Header>
-                    <h4>
-                        検索
-                    </h4>
-                </Card.Header>
-                <Card.Body>
-                    <p>
-                        Card{' '}
-                        <code>
-                            .card-primary
-                        </code>
-                    </p>
-                </Card.Body>
-            </Card>
+            <Card title={<h4>検索</h4>} contents={element} />
         );
     }
 }

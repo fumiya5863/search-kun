@@ -4,7 +4,8 @@ import { Form } from 'react-bootstrap';
 const Input = ({
     type,
     value,
-    placeholder
+    placeholder,
+    onChange
 }) => {
     return (
         <Form.Group>
@@ -12,6 +13,7 @@ const Input = ({
                 type={type}
                 value={value}
                 placeholder={placeholder}
+                onChange={onChange}
             />
         </Form.Group>
     );
