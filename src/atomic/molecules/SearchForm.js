@@ -1,13 +1,12 @@
 import React, { useState, useCallback } from 'react';
 import { Form } from 'react-bootstrap';
-import styled from 'styled-components';
 
 import { Input } from '@atoms/Input';
 
-const StyledForm = styled(Form)`
-    width: 80%;
-    margin: auto;
-`;
+const styledInput = {
+    width: '80%',
+    margin: 'auto'
+};
 
 const SearchForm = () => {
     const [searchText, setSearchText] = useState('');
@@ -20,14 +19,15 @@ const SearchForm = () => {
     );
     
     return (
-        <StyledForm>
+        <Form>
             <Input 
-                type="search" 
+                type="search"
                 value={searchText} 
                 placeholder="google検索"
+                styledInput={styledInput}
                 onChange={onChange}
             />
-        </StyledForm>
+        </Form>
     );
 };
 

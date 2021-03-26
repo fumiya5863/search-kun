@@ -5,14 +5,13 @@ import { CardHeader } from '@atoms/CardHeader';
 import { CardBody } from '@atoms/CardBody';
 
 const Card = ({
-    CardClassName,
-    contents,
-    title
+    className,
+    row
 }) => {
     return (
-        <BootstrapCard className="card-primary">
-            <CardHeader title={title} />
-            <CardBody contents={contents} />
+        <BootstrapCard className={className}>
+            <CardHeader title={row[0]} />
+            <CardBody row={row[1]} />
         </BootstrapCard>
     );
 };

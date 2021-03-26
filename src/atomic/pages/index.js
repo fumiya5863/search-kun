@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import '@styles';
 import Header from '@organisms/Header';
+import Body from '@organisms/Body';
 import Footer from '@organisms/Footer';
 
 export default class Index extends Component {
@@ -10,7 +11,7 @@ export default class Index extends Component {
         return (
             <Router>
                 <Header />
-                <Main />
+                <Body />
                 <Footer />
             </Router>
         );

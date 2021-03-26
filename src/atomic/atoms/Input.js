@@ -5,6 +5,7 @@ const Input = ({
     type,
     value,
     placeholder,
+    styledInput,
     onChange
 }) => {
     return (
@@ -13,6 +14,7 @@ const Input = ({
                 type={type}
                 value={value}
                 placeholder={placeholder}
+                style={styledInput}
                 onChange={onChange}
             />
         </Form.Group>

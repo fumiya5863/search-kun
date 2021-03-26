@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { NavTitle } from '@molecules/NavTitle';
-import { NavRouteLinkGroup } from '@molecules/NavRouteLinkGroup';
+import { NavRouteLink } from '@molecules/NavRouteLink';
 
 const StyledNavbar = styled(Navbar)`
     position: static;
@@ -13,6 +13,34 @@ const StyledNavbar = styled(Navbar)`
     margin-bottom: 15px;
     padding-bottom: 10px;
 `;
+
+
+const linkSettings = [
+    {
+        text: '検索',
+        url: 'search',
+    },
+    {
+        text: 'ニュース',
+        url: 'news',
+    },
+    {
+        text: 'SNS',
+        url: 'sns',
+    },
+    {
+        text: '買い物',
+        url: 'shop',
+    },
+    {
+        text: '地図',
+        url: 'map',
+    },
+    {
+        text: '地域',
+        url: 'area',
+    },
+];
 
 export default class Header extends Component {
     render()
@@ -25,7 +53,7 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <NavRouteLinkGroup className="mr-auto" />
+                        <NavRouteLink className="mr-auto" linkSettings={linkSettings} />
                     </Navbar.Collapse>
                 </StyledNavbar>
             </header>

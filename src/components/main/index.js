@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 
 import Contents from '@components/main/contents';

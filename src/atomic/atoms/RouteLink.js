@@ -7,7 +7,10 @@ const RouteLink = ({
     url
 }) => {
     return (
-        <Link style={styledRouteLink} to={url}>
+        <Link 
+            style={styledRouteLink} 
+            to={url}
+        >
             {value}
         </Link>        
     )
