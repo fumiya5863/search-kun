@@ -18,17 +18,19 @@ const cardSettings = [
 export default class Top extends Component {
     render()
     {
-        const TopCards = cardSettings.map((row, id) => {
-            return <Col key={id} xm={12} md={6} lg={3}>
-                <Card className='card-primary' row={row} />
-            </Col>
+        const San = cardSettings.map((row, id) => {
+            // return <Col key={id} xm={12} md={6} lg={3}>
+            //     <Card className='card-primary' row={row} />
+            // </Col>
+            return <h1>hello</h1>
         });
         
         return(
             <Row>
-                <Col xm={12} md={6} lg={3}>
-                    <Card className='card-primary' row={cardSettings[0]} />
-                </Col>
+                <San />
+                {/* <Col xm={12} md={6} lg={3}> */}
+                    {/* <Card className='card-primary' row={cardSettings[0]} /> */}
+                {/* </Col> */}
             </Row>
         );
     }

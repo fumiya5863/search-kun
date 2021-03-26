@@ -3,7 +3,8 @@ import React, {
 } from 'react';
 import { Route } from 'react-router-dom';
 
-import Top from '@components/main/contents/top';
+// import Top from '@components/main/contents/top';
+import Top from '@organisms/body/Top'; 
 import Search from '@components/main/contents/search';
 
 export default class Contents extends Component {

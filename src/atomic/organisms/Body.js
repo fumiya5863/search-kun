@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { Route } from 'react-router-dom';
 
+import { SearchForm } from '@molecules/SearchForm';
+import Top from '@organisms/body/Top';
+
 export default class Body extends Component {
     render() {
         return (
@@ -12,13 +15,6 @@ export default class Body extends Component {
                     path="/"
                     component={
                         Top
-                    }
-                ></Route>
-                <Route
-                    exact
-                    path="/search"
-                    component={
-                        Search
                     }
                 ></Route>
             </Container>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card as BootstrapCard } from 'react-bootstrap';
 
-import { CardHeader } from '@atoms/CardHeader';
+import { CardTitle } from '@atoms/CardTitle';
 import { CardBody } from '@atoms/CardBody';
 
 const Card = ({
@@ -10,7 +10,9 @@ const Card = ({
 }) => {
     return (
         <BootstrapCard className={className}>
-            <CardHeader title={row[0]} />
+            <BootstrapCard.Header>
+                <CardTitle CardText={row[0]} />
+            </BootstrapCard.Header>
             <CardBody row={row[1]} />
         </BootstrapCard>
     );

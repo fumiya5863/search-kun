@@ -7,7 +7,7 @@ const publicPath = path.join(__dirname, './public');
 
 module.exports = {
   mode: 'development',
-  entry: path.join(srcPath, './components/app.js'),
+  entry: path.join(atomicPath, './pages/app.js'),
   resolve: {
       alias: {
           '@atoms': path.join(atomicPath, './atoms'),

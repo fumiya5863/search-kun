@@ -9,10 +9,76 @@ const cardSettings = [
         [
             {
                 text: 'Goggle',
-                url: '',
+                url: 'https://google.com',
+            },
+            {
+                text: 'Yahoo! JAPAN',
+                url: 'https://www.yahoo.co.jp/'
+            },
+            {
+                text: 'Bing',
+                url: 'https://www.bing.com/'
+            },
+            {
+                text: 'goo',
+                url: 'https://www.goo.ne.jp/'
+            },
+            {
+                text: 'DuckDuckGo',
+                url: 'https://duckduckgo.com/'
             }
         ]
     ],
+    [
+        'ニュース',
+        [
+            {
+                text: 'Goggleニュース',
+                url: 'https://news.google.com/topstories?hl=ja&gl=JP&ceid=JP:ja',
+            },
+            {
+                text: 'Yahoo!ニュース',
+                url: 'https://news.yahoo.co.jp/'
+            },
+            {
+                text: 'NHKニュース',
+                url: 'https://www3.nhk.or.jp/news/'
+            },
+            {
+                text: 'goo',
+                url: 'https://www.goo.ne.jp/'
+            },
+            {
+                text: 'DuckDuckGo',
+                url: 'https://duckduckgo.com/'
+            }
+        ]
+    ],
+    [
+        'Qiita',
+        [
+            {
+                text: 'Goggle',
+                url: 'https://google.com',
+            },
+            {
+                text: 'Yahoo! JAPAN',
+                url: 'https://www.yahoo.co.jp/'
+            },
+            {
+                text: 'Bing',
+                url: 'https://www.bing.com/'
+            },
+            {
+                text: 'goo',
+                url: 'https://www.goo.ne.jp/'
+            },
+            {
+                text: 'DuckDuckGo',
+                url: 'https://duckduckgo.com/'
+            }
+        ]
+    ]
 ];
 
 export default class Top extends Component {
@@ -24,9 +90,9 @@ export default class Top extends Component {
             </Col>
         });
         
-        return(
+        return (
             <Row>
-                <TopCards />
+                {TopCards}
             </Row>
         );
     }

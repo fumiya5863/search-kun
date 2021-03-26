@@ -14,7 +14,6 @@ const StyledNavbar = styled(Navbar)`
     padding-bottom: 10px;
 `;
 
-
 const linkSettings = [
     {
         text: '検索',
