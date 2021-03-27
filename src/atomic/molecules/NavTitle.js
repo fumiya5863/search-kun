@@ -2,11 +2,11 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import { Title } from '@atoms/Title'; 
+import { Title } from '@atoms/Title';
 
 const styledTitle = {
-    marginTop: '10px'
-}; 
+    marginTop: '10px',
+};
 
 const NavTitle = () => {
     return (

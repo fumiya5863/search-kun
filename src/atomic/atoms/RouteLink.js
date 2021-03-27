@@ -1,19 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RouteLink = ({
-    styledRouteLink,
-    value,
-    url
-}) => {
+const RouteLink = ({ styledRouteLink, value, url }) => {
     return (
-        <Link 
-            style={styledRouteLink} 
-            to={url}
-        >
+        <Link style={styledRouteLink} to={url}>
             {value}
-        </Link>        
-    )
+        </Link>
+    );
 };
 
 export { RouteLink };

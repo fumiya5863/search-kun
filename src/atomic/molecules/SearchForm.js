@@ -5,7 +5,7 @@ import { Input } from '@atoms/Input';
 
 const styledInput = {
     width: '80%',
-    margin: 'auto'
+    margin: 'auto',
 };
 
 const SearchForm = () => {
@@ -17,12 +17,12 @@ const SearchForm = () => {
         },
         [searchText]
     );
-    
+
     return (
         <Form>
-            <Input 
+            <Input
                 type="search"
-                value={searchText} 
+                value={searchText}
                 placeholder="google検索"
                 styledInput={styledInput}
                 onChange={onChange}

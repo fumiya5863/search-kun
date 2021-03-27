@@ -18,13 +18,12 @@ const linkSettings = [
     {
         text: '国内',
         url: 'domestic',
-    }
+    },
 ];
 
 export default class Header extends Component {
-    render()
-    {
-        return(
+    render() {
+        return (
             <header>
                 <StyledNavbar bg="light" expand="lg">
                     <NavTitle />
@@ -32,7 +31,10 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <NavRouteLink className="mr-auto" linkSettings={linkSettings} />
+                        <NavRouteLink
+                            className="mr-auto"
+                            linkSettings={linkSettings}
+                        />
                     </Navbar.Collapse>
                 </StyledNavbar>
             </header>

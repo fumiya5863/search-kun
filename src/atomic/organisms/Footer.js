@@ -5,9 +5,7 @@ export default class Header extends Component {
         return (
             <footer className="text-center">
                 <h3>
-                    <small>
-                        &copy;ふみやん.2021.
-                    </small>
+                    <small>&copy;ふみやん.2021.</small>
                 </h3>
             </footer>
         );
