@@ -17,6 +17,11 @@ export default class Body extends Component {
                         Top
                     }
                 ></Route>
+                    <Route
+                    exact
+                    path="domestic"
+                    component=""
+                ></Route>
             </Container>
         );
     }
