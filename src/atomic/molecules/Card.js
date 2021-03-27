@@ -2,7 +2,7 @@ import React from 'react';
 import { Card as BootstrapCard } from 'react-bootstrap';
 
 import { CardTitle } from '@atoms/CardTitle';
-import { CardBody } from '@atoms/CardBody';
+import { CardContents } from '@atoms/CardContents';
 
 const Card = ({
     className,
@@ -11,9 +11,11 @@ const Card = ({
     return (
         <BootstrapCard className={className}>
             <BootstrapCard.Header>
-                <CardTitle CardText={row[0]} />
+                <CardTitle text={row.text} url={row.url} />
             </BootstrapCard.Header>
-            <CardBody row={row[1]} />
+            <BootstrapCard.Body>
+                <CardContents contents={row.contents} />
+            </BootstrapCard.Body>
         </BootstrapCard>
     );
 };

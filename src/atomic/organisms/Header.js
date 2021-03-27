@@ -16,29 +16,9 @@ const StyledNavbar = styled(Navbar)`
 
 const linkSettings = [
     {
-        text: '検索',
-        url: 'search',
-    },
-    {
-        text: 'ニュース',
-        url: 'news',
-    },
-    {
-        text: 'SNS',
-        url: 'sns',
-    },
-    {
-        text: '買い物',
-        url: 'shop',
-    },
-    {
-        text: '地図',
-        url: 'map',
-    },
-    {
-        text: '地域',
-        url: 'area',
-    },
+        text: '国内',
+        url: 'domestic',
+    }
 ];
 
 export default class Header extends Component {
