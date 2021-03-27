@@ -4,7 +4,7 @@ const Title = ({
     styledTitle
 }) => {
     return (
-        <h3 style={styledTitle}>ふみやん検索</h3>
+        <h4 style={styledTitle}>ふみプロオススメサイト</h4>
     );
 };
 
