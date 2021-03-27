@@ -10,7 +10,13 @@ let mainWindow;
 
 function createWindow() {
 
-    mainWindow = new BrowserWindow({width: 1000, height: 1000,});
+    mainWindow = new BrowserWindow({
+        width: 1000, 
+        height: 1000,
+        webPreferences: {
+            nodeIntegration: true
+        }
+    });
 
     mainWindow.loadURL('http://localhost:8080');
 
