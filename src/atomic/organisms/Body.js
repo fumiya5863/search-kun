@@ -10,18 +10,8 @@ export default class Body extends Component {
         return (
             <Container>
                 <SearchForm />
-                <Route
-                    exact
-                    path="/"
-                    component={
-                        Top
-                    }
-                ></Route>
-                    <Route
-                    exact
-                    path="domestic"
-                    component=""
-                ></Route>
+                <Route exact path="/" component={Top}></Route>
+                <Route exact path="domestic" component=""></Route>
             </Container>
         );
     }

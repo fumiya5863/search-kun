@@ -1,13 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
-const Input = ({
-    type,
-    value,
-    placeholder,
-    styledInput,
-    onChange
-}) => {
+const Input = ({ type, value, placeholder, styledInput, onChange }) => {
     return (
         <Form.Group>
             <Form.Control

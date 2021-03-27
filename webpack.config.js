@@ -14,6 +14,7 @@ module.exports = {
           '@molecules': path.join(atomicPath, './molecules'),
           '@organisms': path.join(atomicPath, './organisms'),
           '@pages': path.join(atomicPath, './pages'),
+          '@config': path.join(srcPath, './config'),
           '@images': path.join(srcPath, './images'),
           '@styles': path.join(srcPath, './styles')
       }
