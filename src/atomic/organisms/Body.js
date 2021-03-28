@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 
 import { SearchForm } from '@molecules/SearchForm';
 import Top from '@organisms/body/Top';
+import Domestic from '@organisms/body/Domestic';
 
 export default class Body extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class Body extends Component {
             <Container>
                 <SearchForm />
                 <Route exact path="/" component={Top}></Route>
-                <Route exact path="domestic" component=""></Route>
+                <Route exact path="/domestic" component={Domestic}></Route>
             </Container>
         );
     }
