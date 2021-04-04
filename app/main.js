@@ -20,7 +20,10 @@ function createWindow() {
 
     mainWindow.loadURL('http://localhost:8080');
 
-    // mainWindow.webContents.openDevTools();
+    if(process.env.NODE_ENV === "develop")
+    {
+        mainWindow.webContents.openDevTools();
+    }
 
     mainWindow.on('closed', function () {
         mainWindow = null

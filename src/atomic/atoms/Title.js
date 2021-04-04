@@ -1,7 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Title = ({ styledTitle }) => {
-    return <h4 style={styledTitle}>ふみやんオススメサイト</h4>;
-};
+const Wrapper = styled.div`
+    > * {
+        height: auto;
+    }
+`;
 
-export { Title };
+// const Title = ({ styledTitle }) => {
+//     return <h4 style={styledTitle}>ふみやんオススメサイト</h4>;
+// };
+
+const Text = ({ className, children }) => (
+    <Wrapper>{children}</Wrapper>
+);
+
+export { Text };
